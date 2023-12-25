@@ -1,0 +1,55 @@
+﻿<Page x:Class="TarkovKar.Page762"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TarkovKar"
+      mc:Ignorable="d" 
+        d:DesignHeight="891" d:DesignWidth="1467"
+        Title="Page762">
+
+    <Grid Background="#FF222222" >
+        <Viewbox HorizontalAlignment="Center" Margin="0,158,0,0" Stretch="Fill" VerticalAlignment="Top" Height="178">
+            <Grid Height="148" Width="1294">
+                <Rectangle HorizontalAlignment="Center" Height="148" Stroke="White" VerticalAlignment="Center" Width="1294" Fill="#FF424242"/>
+                <Label Content="БП гж" HorizontalAlignment="Left" Height="36" Margin="138,14,0,0" VerticalAlignment="Top" Width="232" FontFamily="Arial" FontSize="24" Background="{x:Null}" Foreground="#FF4EFF00"/>
+                <Label Content="58" HorizontalAlignment="Left" Height="54" Margin="544,0,0,0" VerticalAlignment="Center" Width="52" FontFamily="Arial" FontSize="36" Foreground="White"/>
+                <Label Content="47" HorizontalAlignment="Left" Height="54" Margin="990,0,0,0" VerticalAlignment="Center" Width="54" FontFamily="Arial" FontSize="36" Foreground="White"/>
+                <Image Margin="18,14,1156,14" Source="img/bp.png" Stretch="Fill" Width="120" Height="120"/>
+
+            </Grid>
+        </Viewbox>
+        <Viewbox HorizontalAlignment="Center" Margin="0,336,0,0" Stretch="Fill" VerticalAlignment="Top" Height="189">
+            <Grid Height="148" Width="1294">
+                <Rectangle HorizontalAlignment="Center" Height="148" Stroke="White" VerticalAlignment="Center" Width="1294" Fill="#FF2C2C2C"/>
+                <Label Content="ПП гж" HorizontalAlignment="Left" Height="36" Margin="138,14,0,0" VerticalAlignment="Top" Width="80" FontFamily="Arial" FontSize="24" Background="{x:Null}" Foreground="#FFE6FF00"/>
+                <Label Content="55" HorizontalAlignment="Left" Height="54" Margin="546,0,0,0" VerticalAlignment="Center" Width="52" FontFamily="Arial" FontSize="36" Foreground="White"/>
+                <Label Content="41" HorizontalAlignment="Left" Height="54" Margin="990,0,0,0" VerticalAlignment="Center" Width="54" FontFamily="Arial" FontSize="36" Foreground="White"/>
+                <Image Margin="18,14,1156,14" Source="img/pp.png" Stretch="Fill" Width="120" Height="120"/>
+
+            </Grid>
+        </Viewbox>
+        <Viewbox HorizontalAlignment="Center" Margin="0,525,0,0" Stretch="Fill" VerticalAlignment="Top" Height="188">
+            <Grid Height="148" Width="1294">
+                <Rectangle HorizontalAlignment="Center" Height="148" Stroke="White" VerticalAlignment="Center" Width="1294" Fill="#FF424242"/>
+                <Label Content="УС гж" HorizontalAlignment="Left" Height="36" Margin="138,14,0,0" VerticalAlignment="Top" Width="80" FontFamily="Arial" FontSize="24" Background="{x:Null}" Foreground="#FFFFAF00"/>
+                <Label Content="56" HorizontalAlignment="Left" Height="54" Margin="544,0,0,0" VerticalAlignment="Center" Width="52" FontFamily="Arial" FontSize="36" Foreground="White"/>
+                <Label Content="29" HorizontalAlignment="Left" Height="54" Margin="990,0,0,0" VerticalAlignment="Center" Width="54" FontFamily="Arial" FontSize="36" Foreground="White"/>
+                <Image Margin="18,14,1156,14" Source="img/ys.png" Stretch="Fill" Width="120" Height="120"/>
+
+            </Grid>
+        </Viewbox>
+        <Viewbox HorizontalAlignment="Center" Margin="0,713,0,0" Stretch="Fill" VerticalAlignment="Top">
+            <Grid Height="148" Width="1294">
+                <Rectangle HorizontalAlignment="Center" Height="148" Stroke="White" VerticalAlignment="Center" Width="1294"/>
+                <Label Content="HP" HorizontalAlignment="Left" Height="36" Margin="138,14,0,0" VerticalAlignment="Top" Width="70" FontFamily="Arial" FontSize="24" Background="{x:Null}" Foreground="Red"/>
+                <Label Content="87" HorizontalAlignment="Left" Height="54" Margin="546,0,0,0" VerticalAlignment="Center" Width="52" FontFamily="Arial" FontSize="36" Foreground="White"/>
+                <Label Content="15" HorizontalAlignment="Left" Height="54" Margin="990,0,0,0" VerticalAlignment="Center" Width="54" FontFamily="Arial" FontSize="36" Foreground="White"/>
+                <Image Margin="18,14,1156,14" Source="img/hp.png" Stretch="Fill" Width="120" Height="120"/>
+
+            </Grid>
+        </Viewbox>
+        <Label Content="Урон" HorizontalAlignment="Left" Height="54" Margin="603,88,0,0" VerticalAlignment="Top" Width="92" FontFamily="Arial" FontSize="36" Foreground="White"/>
+        <Label Content="Бронепробитие" HorizontalAlignment="Left" Height="54" Margin="1016,88,0,0" VerticalAlignment="Top" Width="270" FontFamily="Arial" FontSize="36" Foreground="White" RenderTransformOrigin="0.496,-0.056"/>
+    </Grid>
+</Page>

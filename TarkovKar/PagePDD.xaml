@@ -1,0 +1,15 @@
+﻿<Page x:Class="TarkovKar.PagePDD"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TarkovKar"
+      mc:Ignorable="d" 
+      d:DesignHeight="100" d:DesignWidth="300"
+      Title="PagePDD">
+
+    <Grid OpacityMask="Black" Background="#2D00FF9C" >
+        <Label Content="© 2022 - 2023 TarkovKar" HorizontalAlignment="Center" Height="28" Margin="0,62,0,0" VerticalAlignment="Top" Width="146" Background="{x:Null}" Foreground="White" OpacityMask="White" BorderThickness="1" BorderBrush="White" FontFamily="Arial" />
+        <Label Content="Почта: arceniy05@gmail.com" HorizontalAlignment="Center" Height="28" Margin="0,22,0,0" VerticalAlignment="Top" Width="170" Background="{x:Null}" Foreground="White" OpacityMask="White" BorderThickness="1" BorderBrush="White" FontFamily="Arial"/>
+    </Grid>
+</Page>

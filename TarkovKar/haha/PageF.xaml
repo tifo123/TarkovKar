@@ -1,0 +1,27 @@
+﻿<Page x:Class="TarkovKar.haha.PageF"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TarkovKar.haha"
+      mc:Ignorable="d" 
+      d:DesignHeight="200" d:DesignWidth="300"
+      Title="PageF">
+    <Grid Background="#FF5F5F5F">
+
+
+        <Label Content="Если Вы ЧВК, то для выхода необходим игрок Дикий. Если Вы Дикий, то Вам нужен игрок ЧВК" HorizontalAlignment="Center" Height="21" VerticalAlignment="Top" Width="278" FontFamily="Arial" FontSize="6" RenderTransformOrigin="0.5,0.5" Margin="0,5,0,0">
+
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.674"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.488"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Image Margin="10,25,9,10" Source="/img/23.jpg" Stretch="Fill"/>
+
+    </Grid>
+</Page>

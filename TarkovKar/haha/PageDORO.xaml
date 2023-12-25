@@ -1,0 +1,25 @@
+﻿<Page x:Class="TarkovKar.haha.PageDORO"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TarkovKar.haha"
+      mc:Ignorable="d" 
+      d:DesignHeight="200" d:DesignWidth="300"
+      Title="PageDORO">
+
+    <Grid Background="#FF5F5F5F">
+        <Viewbox HorizontalAlignment="Center" Height="183" Margin="0,10,0,0" Stretch="Fill" VerticalAlignment="Top" Width="264">
+            <Grid Height="183" Width="263">
+                <Label Content="Доступен как ЧВК так и Диким" HorizontalAlignment="Center" Height="33" VerticalAlignment="Top" Width="263" FontFamily="Arial" FontSize="18" Margin="0,-10,0,0"/>
+                <Image Margin="6,23,7,0" Source="/img/22.jpg" Stretch="Fill" Height="160" Width="250"/>
+
+
+
+            </Grid>
+        </Viewbox>
+
+
+
+    </Grid>
+</Page>

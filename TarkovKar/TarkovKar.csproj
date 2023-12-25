@@ -1,0 +1,574 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SSDTUnitTestPath Condition="'$(SSDTUnitTestPath)' == ''">$(VsInstallRoot)\Common7\IDE\Extensions\Microsoft\SQLDB</SSDTUnitTestPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SSDTPath Condition="'$(SSDTPath)' == ''">$(VsInstallRoot)\Common7\IDE\Extensions\Microsoft\SQLDB\DAC</SSDTPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC3692C2-BCD6-49FE-9501-F1F2D2A321B1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TarkovKar</RootNamespace>
+    <AssemblyName>TarkovKar</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.2.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector NET 8.2.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="haha\PageDORO.xaml.cs">
+      <DependentUpon>PageDORO.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="haha\PageF.xaml.cs">
+      <DependentUpon>PageF.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="haha\PageG.xaml.cs">
+      <DependentUpon>PageG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="haha\PageH.xaml.cs">
+      <DependentUpon>PageH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="haha\PageJ.xaml.cs">
+      <DependentUpon>PageJ.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="haha\PageK.xaml.cs">
+      <DependentUpon>PageK.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ha\Page11.xaml.cs">
+      <DependentUpon>Page11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ha\Page12.xaml.cs">
+      <DependentUpon>Page12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ha\Page14.xaml.cs">
+      <DependentUpon>Page14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ha\Page15.xaml.cs">
+      <DependentUpon>Page15.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ha\Page16.xaml.cs">
+      <DependentUpon>Page16.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MySqlCommand.cs" />
+    <Compile Include="MySqlConnection.cs" />
+    <Compile Include="MySqlDataAdapter.cs" />
+    <Compile Include="ha\Page13.xaml.cs">
+      <DependentUpon>Page13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page545.xaml.cs">
+      <DependentUpon>Page545.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page556.xaml.cs">
+      <DependentUpon>Page556.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page762.xaml.cs">
+      <DependentUpon>Page762.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageCus.xaml.cs">
+      <DependentUpon>PageCus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageLes.xaml.cs">
+      <DependentUpon>PageLes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageNovosti.xaml.cs">
+      <DependentUpon>PageNovosti.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PagePDD.xaml.cs">
+      <DependentUpon>PagePDD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PagePr.xaml.cs">
+      <DependentUpon>PagePr.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageProf.xaml.cs">
+      <DependentUpon>PageProf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageZav.xaml.cs">
+      <DependentUpon>PageZav.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window2.xaml.cs">
+      <DependentUpon>Window2.xaml</DependentUpon>
+    </Compile>
+    <Page Include="haha\PageDORO.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="haha\PageF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="haha\PageG.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="haha\PageH.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="haha\PageJ.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="haha\PageK.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ha\Page11.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ha\Page12.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ha\Page14.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ha\Page15.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ha\Page16.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="ha\Page13.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page545.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page556.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page762.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageCus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageLes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageNovosti.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PagePDD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PagePr.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageProf.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageZav.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\Image2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\6.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\arena_art.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\brszilskaya-koshka-harakter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Azure.Core">
+      <Version>1.25.0</Version>
+    </PackageReference>
+    <PackageReference Include="Azure.Identity">
+      <Version>1.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces">
+      <Version>1.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Data.SqlClient">
+      <Version>5.1.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Data.SqlClient.SNI">
+      <Version>5.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Identity.Client">
+      <Version>4.47.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Identity.Client.Extensions.Msal">
+      <Version>2.19.3</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Abstractions">
+      <Version>6.24.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens">
+      <Version>6.24.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Logging">
+      <Version>6.24.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Protocols">
+      <Version>6.24.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect">
+      <Version>6.24.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens">
+      <Version>6.24.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Buffers">
+      <Version>4.5.1</Version>
+    </PackageReference>
+    <PackageReference Include="System.Configuration.ConfigurationManager">
+      <Version>6.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="System.Diagnostics.DiagnosticSource">
+      <Version>4.6.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt">
+      <Version>6.24.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.IO">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Memory">
+      <Version>4.5.4</Version>
+    </PackageReference>
+    <PackageReference Include="System.Memory.Data">
+      <Version>1.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.4</Version>
+    </PackageReference>
+    <PackageReference Include="System.Numerics.Vectors">
+      <Version>4.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe">
+      <Version>6.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Security.AccessControl">
+      <Version>6.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Security.Cryptography.Algorithms">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Security.Cryptography.Encoding">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Security.Cryptography.Primitives">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Security.Cryptography.ProtectedData">
+      <Version>4.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Security.Cryptography.X509Certificates">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Security.Permissions">
+      <Version>6.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Security.Principal.Windows">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Text.Encoding">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Text.Encodings.Web">
+      <Version>6.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Text.Json">
+      <Version>4.7.2</Version>
+    </PackageReference>
+    <PackageReference Include="System.Threading.Tasks.Extensions">
+      <Version>4.5.4</Version>
+    </PackageReference>
+    <PackageReference Include="System.ValueTuple">
+      <Version>4.5.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\caret_white_top_bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\Blokpost-VS-RF-Aktivnyj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\zav.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\les.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\j.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\k.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\%3b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\kl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\y.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\bp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\pp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\ys.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\hp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\w %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\cus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\112.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\113.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\114.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\115.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\116.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup Condition="$(VisualStudioVersion) == '17.0'">
+    <Reference Include="Microsoft.Data.Tools.Schema.Sql, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>$(SSDTPath)\Microsoft.Data.Tools.Schema.Sql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Tools.Schema.Sql.UnitTesting, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>$(SSDTUnitTestPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>$(SSDTUnitTestPath)\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <SsdtUnitTestVersion>3.1</SsdtUnitTestVersion>
+  </PropertyGroup>
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="$(VisualStudioVersion) != '15.0' And '$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="$(VisualStudioVersion) != '15.0' And '$(SQLDBExtensionsRefPath)' == ''" />
+</Project>
